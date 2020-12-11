@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("nhập số thứ nhất"))
+        let b = parseInt(prompt("nhập số thứ hai "))
+        let c = parseInt(prompt("nhập số thứ ba"))
+        let area = (a + b + c) / 3;
+        if (area >= 9) {
+            alert("loại A")
+        } else {
+            if (area >= 7) {
+                alert("loại B")
+            } else {
+                if (area >= 5) {
+                    alert("loại C")
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

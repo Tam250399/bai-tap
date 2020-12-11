@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="so" onkeydown="keycode(evt)">
+    <p id="asd"></p>
+    <script>
+        function keycode(evt) {
+            if (evt.keyCode >= 48 && evt.keyCode <= 57) {
+                document.getElementById("asd").innerHTML = 'Đúng'
+            } else {
+                document.getElementById("asd").innerHTML = "Sai"
+            }
+        }
+        document.addEventListener("keypress", keycode);
+    </script>
+</body>
+
+</html>
